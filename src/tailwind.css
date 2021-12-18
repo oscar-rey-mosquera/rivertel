@@ -1,0 +1,75 @@
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+:root{
+    --primary-color: rgba(27, 41, 76, 1);
+    --shadow-btn: 0px 4px 20px rgba(27, 41, 76, 0.38);
+    --secondary-color: #219CA4;
+    --tertiary-color: #F6F6F6;
+    --shadow:  4px 4px 12px rgba(197, 76, 76, 0.1);
+}
+
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.secondary-color {
+    color: var(--secondary-color);
+}
+.secondary-bg {
+    background: var(--secondary-color);
+}
+
+.primary-bg {
+    background: var(--primary-color);
+}
+.tertiary-bg{
+    background-color: var(--tertiary-color);
+}
+
+.btn {
+    @apply font-medium text-xl rounded-xl flex items-center justify-center;
+    cursor: pointer;
+}
+.bodyPhraseSection {
+    @apply lg:mt-48 mt-28 w-11/12 m-auto flex;
+}
+
+.shadow-btn {
+    box-shadow: var(--shadow-btn);
+}
+
+.branding--link {
+    @apply hidden;
+}
+.container-tag-line{
+    min-height: 88vh;
+}
+
+#app{
+    max-width: 1440px;
+    margin: auto;
+}
+
+h1{
+    font-weight: 500;
+}
+
+.card-shadow {
+    box-shadow: var(--shadow);
+}
+
+.chat-button{
+    box-shadow: 0px 4px 30px rgba(69, 192, 181, 0.53);
+}
+
+iframe
+{
+   background: url('/img/loading.svg') 0px 0px no-repeat;
+   background-position: center center;
+   background-size: 70px;
+}
